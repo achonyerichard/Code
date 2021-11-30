@@ -1,0 +1,270 @@
+/* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #161515;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  nav{
+     padding-top: 20px !important;
+     padding-bottom: 20px !important;
+  }
+  
+
+  .btn-default {
+    font-family: Raleway-SemiBold;
+    font-size: 18px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 8px;
+    color: rgba(108, 88, 179, 0.75);
+    letter-spacing: 1px;
+    line-height: 30px;
+    border: 2px solid rgba(108, 89, 179, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+    background-color: grey;
+  }
+  
+  .btn-default:hover {
+    color: #FFF;
+    background: rgba(108, 88, 179, 0.75);
+    border: 2px solid rgba(108, 89, 179, 0.75);
+  }
+  
+  #center{
+      height: 100vh;
+      width: 100vw;
+      background-image: url("https://images.unsplash.com/photo-1589627461407-6257b1acf0fd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+      background-repeat: none;
+      background-size: cover;
+  }
+
+  .overlay {
+      padding-left: 50px;
+      padding-top: 300px;
+      min-height: 100vh;
+      min-width: 100vw;
+      -webkit-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.88);
+      -moz-box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.88);
+      box-shadow: 10px 10px 43px 0px rgba(0,0,0,0.88);
+  }
+
+input[type=text] {
+  border: 1px solid white;
+  min-width: 30%;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+input[placeholder] {
+  font-weight: bold;
+  }
+  
+#droplist {
+border: 1px solid white;
+min-width: 50px;
+padding: 1em;
+}
+
+input[type=button] {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  min-width: 50px;
+  border: 1px solid white;
+
+}
+  @media screen and (max-width:574px) {
+    .overlay{
+      padding-top: 0;
+      font-size: 18px;
+      padding-right: 20px;
+    }
+  }
+  @media screen and (max-width:574px){ 
+    h1{
+      font-size: 40px !important;
+      padding-top: 50px;
+    }
+  }
+@media screen and (max-width:574px){ 
+    .row-nav{
+      display: inline;
+    }
+  }
+  @media screen and (max-width: 574px) {
+  #address,#droplist, input[type=button] {
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+
+
+
+  #header-text{
+      position: relative;
+      z-index: 501;
+  }
+  .form-control{
+      max-width: 500px;
+      height: 60px !important;
+      padding-left:10px;
+  }
+  .btn{
+    height: 60px !important;
+    font-weight: 700;
+  }
+  .custom-select{
+      max-width: 150px;
+      height: 50px;
+  }
+  #text-box{
+      border-bottom: 1px solid black;
+  }
+  .row{
+    width: 50%;
+  }
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  .card{
+    border: none !important;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .city{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 80px;
+  }
+
+  .mapouter{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+    max-width: 100% !important;
+  }
+  .list{
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 50px;
+  }
+
+
+  
+  /* .footer{
+    background-color:#171A1A ;
+    color: whitesmoke;
+    padding: 50px 0;
+}
+.footer-col{
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 70px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-weight: 300;
+    color: whitesmoke;
+    display: block;
+    transition: all 0.3s ease;
+}.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: white;
+}
+@media (max-width:767px) {
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width:574px) {
+    .footer-col{
+        width: 100%;
+        
+    }
+} */

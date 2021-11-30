@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Uber Eats</title>
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="ubereats.css">
+  <link rel="stylesheet" href="/font-awesome.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+</head>
+
+<body>
+  <nav  class="navbar navbar-light bg-light sticky-top">
+    <div class="row">
+      <div id="mySidenav" class="sidenav bg-light">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="">
+          <button style="background-color: black;" type="button" class="btn text-white btn-lg btn-block">Sign-in</button>
+            <a href="">Create a business account</a>
+            <a href="#">Add your restaurant</a>
+            <a href="#">Sign up to deliver</a>
+        </div>
+        <div style="height: 60vh;"></div>
+          <div class="row" style="width: 100%;padding-left: 30px;">
+          <div class="col-4">
+            <img height="50px" width="50px" src="https://www.ubereats.com/_static/d524e619911872cb8ff783bcd7ab4290.svg" alt="">
+          </div>
+          <div class="col-8">
+            <p>There's more to love in the app.</p>
+          </div>
+        </div>
+        <div class="row" style="padding-left: 30px;width: 100%;">
+        <div class="col-md-4">
+            <button style="border-radius: 50px; "  type="button" class="btn btn-secondary btn-lg" d><span><i class="fab fa-apple"></i>iPhone</span></button>
+        </div>
+        <div class="col-2"></div>
+        <div class="col-md-4">
+          <button style="border-radius: 50px;" type="button" class="btn btn-secondary btn-lg" d><span><i class="fab fa-android"></i></span> Android</button>
+        </div>
+      </div> 
+      </div>
+
+      <div class="row d-flex row-nav">
+        <span style="cursor: pointer; font-size: 20px; padding-left: 50px; font-weight: 800;padding-top: 3px;" onclick="openNav()">&#9776</span><h3 style="padding-left: 30px;">Uber <span style="color: green;">Eats</span></h3>
+      </div>
+      <!-- Use any element to open the sidenav -->
+      
+       <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page  -->
+      <div id="main">
+  
+      </div>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button> -->
+      
+    </div>
+      <form class="form-inline">
+        <!-- <button type="button" class="btn-default btn-dark my-2 my-sm-0">Sign in</button> -->
+        <button style="border-radius: 50px; "  type="button" class="btn btn-secondary btn-lg" d>Sign in</button>
+      </form>
+  </nav>
+
+    
+  
+  
+    <div class="overlay"id="center">
+     <div id="top-media">
+        <h1 style="font-family: Trirong , serif, Helvetica; font-size: 60px; font-weight: 700;">Order food to your door</h1><br>
+      </div>
+      
+      <form action="">
+        
+        <label for="address"></label>
+          <input type="text" id="address" placeholder= "Enter delivery address">
+        <label for="droplist"></label>
+        <select name="droplist" id="droplist">
+          <option class="pt-2" value="deliver now">
+            <a style="font-weight: 700;" class="btn btn-secondary dropdown-toggle bg-light text-dark" href="#" role="button"id="dropdownMenuLink" data-toggle="dropdown" aria-expanded="false"><span ><i class="fas fa-clock pt-3"></i></span> Deliver now</a>
+          </option>
+          <option class="pt-2" value="schedule for later">Schedule for later</option>
+        
+        </select>
+          <label for=""></label>
+            <input type="button" value="Find Food">
+      </form> 
+          <div class="pt-3">
+            <p><a href="http://" style="color: black;text-decoration: underline;">Sign in </a>for your recent address</p>
+          </div>
+    </div>
+    
+   
+      
+  
+  
+
+  <div class="card-deck " style="padding-top: 100px; padding-bottom: 100px;">
+  <div class="card">
+    <img class="card-img-top" src="https://www.ubereats.com/_static/d68c5f5ddd33d16a8d6855987410673b.svg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Feed your employees</h3>
+      <p class="card-text"><a href="http://" style="color: black;text-decoration: underline;">Create a business account</a></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://www.ubereats.com/_static/f37288f1ff264310c703ea536190f79c.svg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Your restaurant, delivered</h3>
+      <p class="card-text"><a href="http://" style="color: black;text-decoration: underline;">Add your restaurant</a></p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="https://www.ubereats.com/_static/43d9d02eb8ef72ff2029a296cfb91180.svg" alt="Card image cap">
+    <div class="card-body">
+      <h3 class="card-title">Deliver with Uber Eats</h3>
+      <p class="card-text"><a href="http://" style="color: black;text-decoration: underline;">Sign up to deliver</a></p>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div class="city" >
+  <div class="float-left">
+    <h2>Cities Near Me</h2>
+  </div>
+
+  <div class="float-right">
+    <p><a  href="http://" style="color: black;text-decoration: underline;" href="">View all 500 Cities</a></p>
+  </div>
+</div>
+<!--Google map-->
+<div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=united%20states%20of%20america&t=&z=5&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-org.net">123freemovies</a><br><style>.mapouter{position:relative;text-align:right;height:auto;max-width:100%;}</style><a href="https://www.embedgooglemap.net"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:400px;width:100%;}</style></div></div>
+<!--Google Maps-->
+<div class="row list" style="width: 100%;">
+  <div class="col-md-3 col-sm-12">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Atlanta</li>
+      <li class="list-group-item">Austin</li>
+      <li class="list-group-item">Baltimore-Maryland</li>
+      <li class="list-group-item">Boston</li>
+      <li class="list-group-item">Charlotte</li>
+      <li class="list-group-item">Chicago</li>
+</ul>
+  </div>
+  <div class="col-md-3 col-sm-12">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Dallas-Fort Worth</li>
+      <li class="list-group-item">Denver</li>
+      <li class="list-group-item">Las Vegas</li>
+      <li class="list-group-item">Los Angeles</li>
+      <li class="list-group-item">Miami</li>
+      <li class="list-group-item">Minneapolis - St. Paul</li>
+</ul>
+  </div>
+  <div class="col-md-3 col-sm-12">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">New York City</li>
+      <li class="list-group-item">Palm Springs</li>
+      <li class="list-group-item">Philadelphia</li>
+      <li class="list-group-item">Phoenix</li>
+      <li class="list-group-item">Pittsburgh</li>
+      <li class="list-group-item">Portland</li>
+    </ul>
+  </div>
+  <div class="col-md-3 col-sm-12">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Sacramento</li>
+      <li class="list-group-item">San Diego</li>
+      <li class="list-group-item">San Francisco Bay Area</li>
+      <li class="list-group-item">Seattle</li>
+      <li class="list-group-item">Tampa Bay</li>
+      <li class="list-group-item">Washington D.C.</li>
+    </ul>
+  </div>
+</div>
+
+<h2 style="padding-left: 50px;font-weight: 600;">Countries with Uber Eats</h2>
+<div class="row list" style="width: 100%;">
+  <div class="col-md-3 col-sm-6">
+    
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">United States</li>
+      <li class="list-group-item">Spain</li>
+      <li class="list-group-item">Brazil</li>
+      <li class="list-group-item">Mexico</li>
+      <li class="list-group-item">France</li>
+      <li class="list-group-item">Japan</li>
+</ul>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Canada</li>
+      <li class="list-group-item">Australia</li>
+      <li class="list-group-item">Poland</li>
+      <li class="list-group-item">United Kingdom</li>
+      <li class="list-group-item">Italy</li>
+      <li class="list-group-item">Portugal</li>
+</ul>
+  </div>
+  <div class="col-md-3 col-sm-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Switzerland</li>
+      <li class="list-group-item">Chile</li>
+      <li class="list-group-item">New Zealand</li>
+      <li class="list-group-item">Taiwan (ROC)</li>
+      <li class="list-group-item">South Africa</li>
+      <li class="list-group-item">Belgium</li>
+    </ul>
+  </div>
+  
+<div class="col-md-3 col-sm-6">
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item">Ecuador</li>
+      <li class="list-group-item">Ireland</li>
+      <li class="list-group-item">Sri Lanka</li>
+      <li class="list-group-item">Sweden</li>
+      <li class="list-group-item">Guatemala</li>
+      <li class="list-group-item">Costa Rica</li>
+    </ul>
+</div>
+</div>
+
+<!-- footer -->
+    
+     <footer  style="background-color: #2c292f ;padding-left: 50px;padding-top: 50px; width: 100%; ;padding-right: 50px;">
+       
+            <div class="row " style="width: 100%; padding-bottom: 10px">
+                
+                <div class="col-md-6 col-sm-12 ">
+                    
+                    <div class="py-0">
+                        <h3><span style="color: aliceblue;">Uber</span>  <span style="color: green;">Eats</span></h3> >
+                        <div style="padding-top: 120px;">
+                          <img class="px-2" src="https://www.ubereats.com/_static/3f9ab08ae56699b0acdd1f3adb635d19.svg" frameborder="0"></img>
+                          <img src="https://www.ubereats.com/_static/de177aac4e55e6af701b71ea0dcd0d97.png" alt="" height="40px">
+                        </div>
+                        
+                    </div>
+                      
+                        
+                    
+                </div>
+                
+                <div class="col-md-3 col-sm-12 text-white ">
+                        <div>
+                             
+                                <ul style="list-style-type: none; ">
+                                  <li class="mb-3">Get help</li>
+                                  <li class="mb-3">Buy gift cards</li>
+                                  <li class="mb-3">Add your restraunt</li>
+                                  <li class="mb-3">Sign up to deliver</li>
+                                  <li class="mb-3">Create a business</li>
+                                  <li class="mb-3">Save on your first order</li>
+                              </ul>
+                              
+                        </div>  
+                  </div>  
+                
+                
+                <div class="col-md-3 col-sm-12 text-white  ">
+                    <div>
+                             
+                                <ul style="list-style-type: none; ">
+                                  <li class="mb-3">Restaurants near me</li>
+                                  <li class="mb-3">View all Cities</li>
+                                  <li class="mb-3">View all countries</li>
+                                  <li class="mb-3">Read our blog</li>
+                                  <li class="mb-3">About Uber Eats</li>
+                                  <li class="mb-3"><span><i <i class="fab fa-acquisitions-incorporated"></i></i></span> English</li>
+                              </ul>
+                              
+                        </div>
+                </div>
+            </div>
+
+            <hr style="border-top: 1px solid white;padding-bottom: 30px;">
+
+            <div class="row" style="padding-bottom: 80px;width: 100%;">
+              <div class="col-md-5 col-sm-12 text-white">
+                <span><i class="fab fa-facebook-square"></i></span>
+                <span><i class="fab fa-twitter mx-2"></i></span>
+                <span><i class="fab fa-instagram"></i></span>
+              </div>
+              
+              <div class="col-md-5 col-sm-12 text-white">
+                <div style="padding-left: 400px;">
+                <p>
+                <span class="mx-3"><a style="text-decoration: none; color: white;" href="http://">Privacy Policy</a></span>
+                <span class="mx-3"><a style="text-decoration: none; color: white;" href="http://">Terms</a></span>
+                <span><a style="text-decoration: none; color: white;" href="http://">Pricing</a></span>
+                </p>
+                </div>
+
+                <p>This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.</p>
+              </div>
+              <div class="col-md-2 col-sm-12 text-white">
+                <p>Do not sell my info (Carlifonia)</p>
+                <p>© 2021 Uber Technologies Inc</p>
+              </div>
+            </div>
+        
+     </footer>
+     <!-- end of footer -->
+      
+
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+  <script src="/text.js"></script>
+  <script src="/js/bootstrap.js"></script>
+</body>
+
+</html>
